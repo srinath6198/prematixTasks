@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Task2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Bundle with Popper (for carousel functionality) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+</head>
+</head>
+
+<body>
+    <section>
+
+        <header>
+            <div class="header-flex">
+                <div class="headerLink">
+                    <a href="#">Subscribe</a>
+                </div>
+                <div class="headerLogo">
+                    <img src="./download.png" alt="logo">
+                </div>
+                <div class="icon-login">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <!-- <button>Sing up</button> -->
+                     <!-- Login Button -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
+    Login
+  </button>
+  
+  <!-- Modal for Login Form -->
+ <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <i style="text-align: center;margin-top: 20px;">
+                <img src="./bootstrap-logo-shadow.png" alt="" width="50px">
+            </i>
+            <div class="modal-header">
+                <!-- Lock Icon -->
+               
+
+                <h5 class="modal-title" id="loginModalLabel">Please Sign in</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="username" placeholder="Enter username">
+                    </div>
+                    <div class="mb-3">
+                        <input type="password" class="form-control" id="password" placeholder="Enter password">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="rememberMe">
+                        <label class="form-check-label" for="rememberMe">Remember me</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100" style="max-width: 500px; background-color: blue; border-color: blue;">Signin</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+  
+                </div>
+            </div>
+        </header>
+        <div class="line"></div>
+
+        <nav class="navBer">
+            <a>World</a>
+            <a>U.S</a>
+            <select class="select">
+                <option value="">Technology</option>
+            </select>
+            <a>Design</a>
+            <a>Culture</a>
+            <a>Bunsiness</a>
+            <a>Politics</a>
+            <a>Opioanion</a>
+            <a>Science</a>
+            <a>Health</a>
+            <a>Style</a>
+            <a>travel</a>
+        </nav>
+        <div class="line"></div>
+
+        <!-- Header image part -->
+        <div class="header-img">
+            <!-- <img src="./20240509143559-663cdf4f4df40.webp" alt=""> -->
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <img src="./20240509143559-663cdf4f4df40.webp" class="d-block w-100" alt="Image 1">
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <img src="./overwhelming-information-data-explode-out-head-young-human-brain-too-much-media-too-much-information-maximalism-news-social-media-addiction-generative-ai-image-weber_31965-233370.avif"
+                            class="d-block w-100" alt="Image 2">
+                    </div>
+                </div>
+
+                <!-- Carousel controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+        </div>
+        <!-- line div strt  -->
+        <div class="line"></div>
+        <!-- line div end -->
+
+
+        <div class="box-flex">
+            <div class="box-container-flex">
+                <div class="para-box1">
+                    <h4>World</h4>
+                    <h1>Feature Post</h1>
+                    <p>Nov 12</p>
+                    <p>Lorem, ipsum dolor sit amet doloremque alias, voluptas reiciendis cupiditate
+                        laudantium libero.</p>
+                    <a href="">Continue reading <i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+                <div class="para-box2">
+                    <p>Thumbnails</p>
+                </div>
+            </div>
+
+            <div class="box-container-flex">
+                <div class="para-box1">
+                    <h4>Design</h4>
+                    <h1>Post Title</h1>
+                    <p>Nov 11</p>
+                    <p>Lorem, ipsum dolor sit amet doloremque alias, voluptas reiciendis cupiditate
+                        laudantium libero.</p>
+                    <a href="">Continue reading <i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+                <div class="para-box2">
+                    <p>Thumbnails</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- From the Firrhose -->
+
+        <div class="container-flex-box">
+            <div class="container-left-box">
+                <p><i>From the firehose</i></p>
+                <hr>
+                <h1>Sample blog Post</h1>
+                <p>junuary 1 2021 by <a href="#">Mark</a></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora accusantium in rem
+                    quisquam eius! Tenetur, repellat tempore eum, consequuntur quos quae quo iste, quisquam
+                    sint non fugiat suscipit recusandae perferendis.</p>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum accusantium consequuntur
+                    libero assumenda dignissimos voluptatem distinctio nulla mollitia. Incidunt libero explicabo
+                    voluptatem recusandae debitis maxime error deleniti expedita sed repellat!</p>
+                <h1>BlockQoutes</h1>
+                <p>maxime error deleniti expedita</p>
+                <h3>Quted text goes here.</h3> <br>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum nobis numquam
+                    minima natus eveniet vero in quisquam, voluptate necessitatibus dicta aliquam
+                    officiis dolorum. Provident eaque quas illum? Dolorem, voluptatem quaerat.</p>
+            </div>
+
+            <div class="container-right-box">
+                <div class="right-box-para">
+                    <h1>About</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid velit totam
+                        reprehenderit nobis facere natus blanditiis omnis exercitationem est incidunt, </p>
+                </div>
+                <h1>Recent Post</h1>
+                <hr>
+
+            <div class="cantainer-small">
+                <div class="color-box"></div>
+                <div class="para-box">
+                    <h5>Example blog post title</h5>
+                    <p>January 15 2024</p>
+                </div>
+            </div>
+            <hr>
+
+            <div class="cantainer-small">
+                <div class="color-box"></div>
+                <div class="para-box">
+                    <h5>Example blog post title</h5>
+                    <p>January 15 2024</p>
+                </div>
+            </div>
+            <hr>
+
+            <div class="cantainer-small">
+                <div class="color-box"></div>
+                <div class="para-box">
+                    <h5>Example blog post title</h5>
+                    <p>January 15 2024</p>
+                </div>
+            </div>
+    
+            </div>
+        </div>
+
+    </section>
+
+</body>
+
+</html>
