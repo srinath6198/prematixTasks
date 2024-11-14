@@ -43,21 +43,59 @@
 .line {
     border: 1px solid rgb(202, 200, 200);
 }
+/* nav style  */
+.navbar {
+    display: flex;
+    align-items: center;
+    /* background-color: #333; */
+    color: #000000;
+    padding: 10px 20px;
+}
 
-.navBer {
+.menu-links {
+    width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 10px 0;
-    width: 100%; 
+    /* gap: 15px; */
 }
 
-.navBer a {
+.menu-links a,
+.menu-links .select {
+    color: #000000;
+    text-decoration: none;
+    padding: 10px;
+}
+.menu-links .select {
+    border: none;
+}
+
+/* Toggle button styling */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
     cursor: pointer;
 }
 
-.navBer .select {
-    border: none;
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #000000;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+/* Transform bars for toggle effect */
+.menu-toggle.active .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
 }
 
 .header-img {
@@ -156,13 +194,7 @@
 @media (max-width: 992px) {
 
 
-    .menuToggle {
-        display: none;
-    }
-
-    .toggle-btn {
-        display: block; /* Show toggle button on small screens */
-    }
+   
 
     /* Hide nav-links by default on smaller screens */
     .nav-links {
@@ -205,10 +237,46 @@
     .header-flex,
     .navBer,
     .box-flex {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
     .container-right-box{
         width: 400px;
+    }
+
+
+    /* menu style  */
+
+    .menu-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        /* background-color: #333; */
+    }
+    .menu-links .select{
+        width: 150px !important;
+    }
+
+    .menu-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+        width: 100vw;
+        flex-direction: column;
+        justify-content: left;
+        padding-left: 10px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-links a, .menu-links .select {
+        padding: 10px 20px;
+        text-align: left;
+        width: 100%;
     }
 }
