@@ -45,8 +45,6 @@
             </i>
             <div class="modal-header">
                 <!-- Lock Icon -->
-               
-
                 <h5 class="modal-title" id="loginModalLabel">Please Sign in</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
@@ -75,22 +73,30 @@
         </header>
         <div class="line"></div>
 
-        <nav class="navBer">
-            <a>World</a>
-            <a>U.S</a>
-            <select class="select">
-                <option value="">Technology</option>
-            </select>
-            <a>Design</a>
-            <a>Culture</a>
-            <a>Bunsiness</a>
-            <a>Politics</a>
-            <a>Opioanion</a>
-            <a>Science</a>
-            <a>Health</a>
-            <a>Style</a>
-            <a>travel</a>
+        <nav class="navbar">
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="menu-links">
+                <a href="#">World</a>
+                <a href="#">U.S</a>
+                <select class="select">
+                    <option value="">Technology</option>
+                </select>
+                <a href="#">Design</a>
+                <a href="#">Culture</a>
+                <a href="#">Business</a>
+                <a href="#">Politics</a>
+                <a href="#">Opinion</a>
+                <a href="#">Science</a>
+                <a href="#">Health</a>
+                <a href="#">Style</a>
+                <a href="#">Travel</a>
+            </div>
         </nav>
+        
         <div class="line"></div>
 
         <!-- Header image part -->
@@ -223,5 +229,10 @@
     </section>
 
 </body>
-
+<script>
+    function toggleMenu() {
+        document.querySelector('.menu-links').classList.toggle('active');
+        document.querySelector('.menu-toggle').classList.toggle('active');
+    }
+</script>
 </html>
