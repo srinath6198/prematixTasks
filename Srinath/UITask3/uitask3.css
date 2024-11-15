@@ -1,0 +1,384 @@
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('fonts/MyCustomFont.woff2') format('woff2'),
+         url('fonts/MyCustomFont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.body{
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+
+}
+.navBar {
+    display: flex;
+    justify-content: center;
+    margin: 30px 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #37e668;
+    cursor: pointer;
+    /* padding: 30px; */
+}
+
+.logo p {
+    font-size: 20px;
+}
+
+.menuBar {
+    display: flex;
+    column-gap: 30px;
+}
+
+.menuBar a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-weight: 500;
+}
+
+.login-btn button {
+    background-color: #37e668;
+    font-size: 15px;
+    border: none;
+    border-radius: 50px;
+    padding: 10px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.header-img {
+    /* background: linear-gradient(to right, #2e2927, #201d1c, #393838, #3f3e3e); */
+    background-color: rgb(35, 35, 35);
+    padding: 0px 60px;
+    display: flex;
+    border-radius: 50px;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    
+}
+
+.header-img .header-para {
+    color: white;
+}
+.header-para h1{
+    font-size: 50px;
+}
+.header-para p{
+    margin: 20px 0px;
+    font-size: 20px;
+}
+.header-img .header-app {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-img .header-app button {
+    border: none;
+    background-color: #37e668;
+    font-size: 15px;
+    border: none;
+    border-radius: 50px;
+    padding: 10px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.header-img .header-rate {
+    display: flex;
+    gap: 20px;
+}
+.header-img .header-rate h1{
+    font-size: 30px;
+    
+}
+.header-rate p{
+    font-size: 14px;
+    line-height: 0.1; 
+}
+.header-img img{
+    width: 45vw;
+}
+
+
+.buildPart-flex{
+    display: flex;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+
+.build-right{
+    padding: 20px;
+    width: 40vw;
+}
+.build-right h1{
+    font-size: 50px;
+}
+.build-right p{
+    font-size: 17px;
+    line-height: 1.4;
+}
+.buld-btns{
+margin: 10px 0px;
+display: flex;
+column-gap: 10px;
+}
+.buld-btns button{
+    padding: 10px;
+   
+    font-size: 15px;
+    font-weight: 400;
+    border: none;
+    cursor: pointer;
+}
+.buld-btns .start-btn{
+ background-color: black;
+ width: 200px;
+  border-radius: 50px;
+  color: white;
+}
+.buld-btns .watch-btn{
+ background: none;
+ border-bottom:1px solid gray ;
+}
+.build-left{
+    width: 60vw;
+}
+
+
+
+.smartPhone{
+    background-color: rgb(240, 240, 240);
+    padding: 10px;
+}
+.smartPhone h1{
+    font-size: 30px;
+    margin: 0px 35px;
+}
+.smartPhone-flex{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* gap: 15px; */
+}
+
+
+
+.phone-card {
+    background-color: #fff;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    /* text-align: center; */
+    transition: transform 0.4s;
+    margin: 20px 0px;
+    cursor: pointer;
+}
+
+.phone-card:hover {
+    transform: translatey(-10px);
+}
+
+/* Phone Image */
+
+.phone-image img {
+    width: 100%;
+    height: 350px;
+    
+}
+.phone-image  .phone-offer{
+    position: absolute;
+    padding: 10px 30px;
+    color: #888;
+    font-size: 12px;
+}
+/* Phone Info */
+.phone-info {
+    padding: 20px;
+}
+
+.phone-info h2 {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #333;
+}
+.phone-info h2 .text-line{
+    text-decoration: line-through;
+    color: #888;
+    font-weight: 200;
+    font-size: 16px;
+}
+
+.phone-info p {
+    font-size: 16px;
+    color: #888; 
+    margin-bottom: 10px;
+}
+
+.phone-info h2:last-child {
+    font-size: 22px;
+    color: #303030; 
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+.phone-try{
+    background-color: #050505;
+    display: flex;
+    align-items: center;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    overflow: hidden;
+}
+.phone-try-left{
+width: 50vw;
+padding-left: 200px;
+color: white;
+
+}
+.phone-try-left h1{
+    font-size: 50px;
+}
+.phone-try-left p{
+    margin: 20px 0px ;
+    font-size: 18px;
+}
+
+.phone-appStoreImg img{
+    width: 200px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 5px;
+}
+.phone-try-right{
+    width: 50vw;
+}
+ /* footer  */
+
+ .footer{
+    background-color: black;
+    display: flex;
+    margin: 40px 0px;
+ }
+ .footer-left{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 30vw;
+ }
+ /* Social Media Icons Container */
+.social-icons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Icon Style */
+.social-icon {
+    color: #555;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #68b2da; 
+}
+
+
+.footer-right-flex{
+width: 70vw;
+display: flex;
+justify-content:space-between;
+color: white;
+}
+.footer-right h2{
+    font-size: 20px;
+}
+.footer-right{
+padding: 10px;
+line-height: 1.7;
+}
+
+
+
+
+
+
+
+
+/* Media Queries */
+
+/* Tablet View */
+@media (max-width: 768px) {
+    .header-img img {
+        /* width: 30%;  */
+        /* height: 400px; */
+    }
+
+    .header-para h1 {
+        font-size: 28px; 
+    }
+
+    .menuBar a {
+        font-size: 16px; 
+    }
+
+    .phone-card {
+        width: 100%; 
+        margin: 10px 0;
+    }
+
+    .footer-right {
+        text-align: center;
+    }
+}
+
+/* Mobile View */
+@media (max-width: 480px) {
+    .navBar {
+        flex-direction: column; 
+    }
+
+    .menuBar {
+        flex-direction: column; 
+        gap: 10px;
+    }
+
+    .header-para h1 {
+        font-size: 22px; 
+    }
+
+    .buld-btns button {
+        width: 100%; 
+    }
+
+    .footer-right h2 {
+        font-size: 18px; 
+    }
+
+    .phone-try {
+        flex-direction: column; 
+    }
+
+    .phone-appStoreImg img {
+        width: 150px; 
+    }
+}
